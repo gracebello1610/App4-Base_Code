@@ -36,9 +36,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<link rel="stylesheet" href="w3-colors-flat.css">
 </head> 
 
-<script>
+<script>  /* Note- I copied my body and script code from my app 3 assignment and changed the variables for app 4 */
 
-	var Pregnant_count = 0;
+	var Pregnant_count = 0; 
         var IBS_count = 0;
 
 
@@ -48,7 +48,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 
         function IBSAdd(){
-            IBS_count = IBS_count + 1;
+            IBS_count = IBS_count + 1; 
         }
 
 
@@ -91,7 +91,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 }
 
 	img, object{
-            	max-height:90%;
+            	max-height:90%; <! 
         		max-width:90%;
         	}
 
@@ -136,9 +136,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Are you experiencing nausea/vomiting in the morning?</p>    
-    	</div>
+    	</div> 
 
-<a href="#two" onclick="PregnantAdd();" class="w3-btn w3-grey"> Yes </a>
+<a href="#two" onclick="PregnantAdd();" class="w3-btn w3-grey"> Yes </a> 
 <a href="#two" onclick="IBSAdd();" class="w3-btn w3-grey"> No </a>
 </div>
 
@@ -185,12 +185,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <div class="page" id="results">
 	<div class="w3-container w3-flat-carrot">
 		<div id="header" class="w3-container w3-flat-carrot">
-			<h1>Results Here!</h1>
+			<h1>Results Here!</h1> <!--this displays "show results" on the last page--!>
 		</div>
 
 		<div id="content" class="w3-container">
 			<p id="resultText"></p>
-			<a onclick="showResults()" class="w3-btn w3-grey">Show Results</a>
+			<a onclick="showResults()" class="w3-btn w3-grey">Show Results</a> <!-- this is the code used to show/ calculate the results on the last page--!>
 		</div>
 
 </div>
@@ -198,7 +198,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </div>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
+	<p>DIY!</p> <!--this displays the term "DIY" at the bottom of the page--!>
 </footer>
 	
 </body>
