@@ -30,37 +30,37 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 <head> 
 	<title>Hello World</title>  
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This is for the formatting of the app  -->
+	<meta name="apple-mobile-web-app-capable" content="yes"> <!-- allows the app to be phone accesible -->
 	<link rel="stylesheet" href="w3.css">
 	<link rel="stylesheet" href="w3-colors-flat.css">
 </head> 
 
 <script>  /* Note- I copied my body and script code from my app 3 assignment and changed the variables for app 4 */
 
-	var Pregnant_count = 0; 
-        var IBS_count = 0;
+	var Pregnant_count = 0; //variable for counting pregnancy symptoms 
+        var IBS_count = 0; //variable for counting IBS symptoms 
 
 
         function PregnantAdd(){
-            Pregnant_count = Pregnant_count + 1;
+            Pregnant_count = Pregnant_count + 1; //function for counting pregnancy symptoms 
 
         }
 
         function IBSAdd(){
-            IBS_count = IBS_count + 1; 
+            IBS_count = IBS_count + 1; //function for counting IBS symptoms 
         }
 
 
 	function showResults()
 		{
-		var PregnancyPercent = 100 * (Pregnant_count / 4); 
-		var IBSPercent = 100 * (IBS_count / 4);
-		var resultText = document.getElementById("resultText");
+		var PregnancyPercent = 100 * (Pregnant_count / 4);  //Pregnancy percentage chance calculation
+		var IBSPercent = 100 * (IBS_count / 4); //IBS percentage chance calculation
+		var resultText = document.getElementById("resultText"); //code displays the calculated results
 			
 	resultText.innerHTML =
-    	"Probability of Pregnancy = " + PregnancyPercent + "%<br>" +
-    	"Probability of IBS = " + IBSPercent + "%";
+    	"Probability of Pregnancy = " + PregnancyPercent + "%<br>" + //calcultes the probabily of being pregnant based on the pregnancypercent value
+    	"Probability of IBS = " + IBSPercent + "%"; //calcultes the probabily of having IBS based on the IBSpercent value
 
 		}
 
@@ -74,8 +74,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
      margin: 0em;
 }
 
-.page {
-    width: 100vw;
+.page { 
+    width: 100vw; <!-- used for apperance -->
     height: 100vh;
     position: fixed;
     top: 0;
@@ -100,85 +100,85 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <body>
 	
 	<div id="header" class="w3-container w3-flat-carrot">
-	<h1>Pregnancy or IBS Symptoms?</h1>
+	<h1>Pregnancy or IBS Symptoms?</h1> <!-- This is the heading of my first page and the purpose of this app -->
 	</div>
 	
 	<div id="content" class="w3-container"> 
 
-	<p>Are you feeling like you may be Pregnant but wonder if it is Irritable Bowel Syndrome instead? Answer a few short questions to find out!</p>
+	<p>Are you feeling like you may be Pregnant but wonder if it is Irritable Bowel Syndrome instead? Answer a few short questions to find out!</p> <!-- This prompts the user to continue with the app to figure their problem -->
 
-	<div class="w3-row" style="text-align:center;">
+	<div class="w3-row" style="text-align:center;"> <!-- This is for formatting to allign my text and image -->
 
 	<div class="w3-half">
-	<img src="https://img.freepik.com/premium-vector/happy-pregnancy-motherhood-pregnant-woman-flat-cartoon-vector-illustration_676179-275.jpg" style="width:100%; max-width:200px;">
-	<p>Pregnancy </p>
+	<img src="https://img.freepik.com/premium-vector/happy-pregnancy-motherhood-pregnant-woman-flat-cartoon-vector-illustration_676179-275.jpg" style="width:100%; max-width:200px;"> <!-- This is the link to the first image I included -->
+	<p>Pregnancy </p> <!-- This labels the first included image  -->
 	</div>
 
 	<div class="w3-half">
-	<img src="https://media.istockphoto.com/id/1419930044/vector/happy-woman-with-balanced-gut-flora.jpg?s=612x612&w=0&k=20&c=xyGkg_22Oepgdl0bHKa5DEkNyQOlikoYTZxjtbdp0fk=" style="width:100%; max-width:200px;">
-	<p>IBS</p>
+	<img src="https://media.istockphoto.com/id/1419930044/vector/happy-woman-with-balanced-gut-flora.jpg?s=612x612&w=0&k=20&c=xyGkg_22Oepgdl0bHKa5DEkNyQOlikoYTZxjtbdp0fk=" style="width:100%; max-width:200px;"> <!-- This is the link to my seond image -->
+	<p>IBS</p> <!-- This labels the second included image  -->
 	</div>
 
 	</div>
 	
-	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!-- This prompts the user to continue by clicking the button to get started  -->
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p><!-- adding this because it seems to be missing????? -->
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p><!-- this is an important disclaimer to avoid legal or medical issues -->
 
 	
 	
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
+		<h1>Question 1</h1> <!-- This indicates that I am asking my first question -->
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Are you experiencing nausea/vomiting in the morning?</p>    
+        <p>Are you experiencing nausea/vomiting in the morning?</p>    <!--My listed first question in the heading -->
     	</div> 
 
-<a href="#two" onclick="PregnantAdd();" class="w3-btn w3-grey"> Yes </a> 
-<a href="#two" onclick="IBSAdd();" class="w3-btn w3-grey"> No </a>
+<a href="#two" onclick="PregnantAdd();" class="w3-btn w3-grey"> Yes </a>  <!--Used for calculating final results (pregnancypercentage) and taking user to the next page -->
+<a href="#two" onclick="IBSAdd();" class="w3-btn w3-grey"> No </a> <!--Used for calculating final results (IBSpercentage) and taking user to the next page -->
 </div>
 
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 2</h1>
+		<h1>Question 2</h1> <!-- This indicates that I am asking my second question -->
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you have pre-exsisting digestive issues?</p>
+		<p>Do you have pre-exsisting digestive issues?</p> <!-- This is the second question that I asked -->
 	</div>
 
-<a href="#three" onclick="IBSAdd();" class="w3-btn w3-grey"> Yes </a>
-<a href="#three" onclick="PregnantAdd();" class="w3-btn w3-grey"> No </a>
+<a href="#three" onclick="IBSAdd();" class="w3-btn w3-grey"> Yes </a> <!--Used for calculating final results (IBSpercentage) and taking user to the next page -->
+<a href="#three" onclick="PregnantAdd();" class="w3-btn w3-grey"> No </a> <!--Used for calculating final results (pregnancypercentage) and taking user to the next page -->
 </div>
 
 	<div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 3</h1>
+		<h1>Question 3</h1> <!-- This indicates that I am asking my third question -->
 	</div>	
 
 	<div id="content" class="w3-container">
-		<p>Does your illness come specifically from food/stress?</p>
+		<p>Does your illness come specifically from food/stress?</p> <!-- Here is my third question -->
 	</div>	
 
-<a href="#four" onclick="IBSAdd();" class="w3-btn w3-grey"> Yes </a>
-<a href="#four" onclick="PregnantAdd();" class="w3-btn w3-grey"> No </a>	
+<a href="#four" onclick="IBSAdd();" class="w3-btn w3-grey"> Yes </a> <!--Used for calculating final results (IBSpercentage) and taking user to the next page -->
+<a href="#four" onclick="PregnantAdd();" class="w3-btn w3-grey"> No </a>	<!--Used for calculating final results (pregnancypercentage) and taking user to the next page -->
 </div>	
 
 	<div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 4</h1>
+		<h1>Question 4</h1> <!-- This code is for asking my fourth and last question -->
 	</div>		
 
 <div id="content" class="w3-container">
-	<p>Are you experincing hormonal issues/changes in your cycle?</p>
+	<p>Are you experincing hormonal issues/changes in your cycle?</p> <!-- This is my final question-->
 </div>	
 
-<a href="#results" onclick="PregnantAdd();" class="w3-btn w3-grey"> Yes </a>
-<a href="#results" onclick="IBSAdd();" class="w3-btn w3-grey"> No </a>
+<a href="#results" onclick="PregnantAdd();" class="w3-btn w3-grey"> Yes </a> <!--Used for calculating final results (pregnancypercentage) and taking user to the next page -->
+<a href="#results" onclick="IBSAdd();" class="w3-btn w3-grey"> No </a> <!--Used for calculating final results (IBSpercentage) and taking user to the next page -->
 </div>	
 
 
